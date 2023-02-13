@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alexy Duval\\Desktop\\Université\\Session 4\\Traitement d'image\\Projet de session\\Traitementdimage\\Traitementdimage\\Traitementdimage.csproj": {}
+    "C:\\Users\\coco1\\OneDrive\\Documents\\GitHub\\Traitement_Image_Project\\Traitementdimage\\Traitementdimage.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alexy Duval\\Desktop\\Université\\Session 4\\Traitement d'image\\Projet de session\\Traitementdimage\\Traitementdimage\\Traitementdimage.csproj": {
+    "C:\\Users\\coco1\\OneDrive\\Documents\\GitHub\\Traitement_Image_Project\\Traitementdimage\\Traitementdimage.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alexy Duval\\Desktop\\Université\\Session 4\\Traitement d'image\\Projet de session\\Traitementdimage\\Traitementdimage\\Traitementdimage.csproj",
+        "projectUniqueName": "C:\\Users\\coco1\\OneDrive\\Documents\\GitHub\\Traitement_Image_Project\\Traitementdimage\\Traitementdimage.csproj",
         "projectName": "Traitementdimage",
-        "projectPath": "C:\\Users\\Alexy Duval\\Desktop\\Université\\Session 4\\Traitement d'image\\Projet de session\\Traitementdimage\\Traitementdimage\\Traitementdimage.csproj",
-        "packagesPath": "C:\\Users\\Alexy Duval\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alexy Duval\\Desktop\\Université\\Session 4\\Traitement d'image\\Projet de session\\Traitementdimage\\Traitementdimage\\obj\\",
+        "projectPath": "C:\\Users\\coco1\\OneDrive\\Documents\\GitHub\\Traitement_Image_Project\\Traitementdimage\\Traitementdimage.csproj",
+        "packagesPath": "C:\\Users\\coco1\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\coco1\\OneDrive\\Documents\\GitHub\\Traitement_Image_Project\\Traitementdimage\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Alexy Duval\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\coco1\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -43,6 +43,20 @@
       "frameworks": {
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
+          "dependencies": {
+            "Emgu.CV": {
+              "target": "Package",
+              "version": "[4.6.0.5131, )"
+            },
+            "Emgu.CV.Bitmap": {
+              "target": "Package",
+              "version": "[4.6.0.5131, )"
+            },
+            "Emgu.CV.runtime.windows": {
+              "target": "Package",
+              "version": "[4.6.0.5131, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -61,7 +75,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }
