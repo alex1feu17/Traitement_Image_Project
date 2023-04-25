@@ -1,4 +1,5 @@
 ﻿using Emgu.CV;
+using Emgu.CV.Structure;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,17 +20,33 @@ namespace Traitementdimage
         private double v1;
         private Moments moments;
         private double v2;
+        private Image<Bgr, byte> img;
+        Emgu.CV.Util.VectorOfPoint contour;
 
-        public Tools(double area, double v1, Moments moments, int height, int width, double v2)
+        
+
+        public Tools(Image<Bgr, byte> img ,double area, double v1, Moments moments, int height, int width, double v2, Emgu.CV.Util.VectorOfPoint contour)
         {
+            this.img = img;
             this.area = area;
             this.perimeter = v1;
             this.moments = moments;
             this.height = height;
             this.width = width;
-            //this.area = v2;
+            this.contour = contour;
         }
 
-        
+        public Image<Bgr, byte> Imgtools { get; }
+
+        public Emgu.CV.Util.VectorOfPoint getContour()
+        {
+           
+            return contour;
+        }
+        public Image<Bgr, byte> getimg()
+        {
+            return img;
+        }
+
     }
 }
